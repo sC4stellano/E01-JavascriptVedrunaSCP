@@ -55,6 +55,7 @@ let resta = 10 - 4;
 let multiplicacion = 6 * 7;
 let division = 20 / 5;
 let modulo = 10 % 3;
+
 console.log("Suma:", suma);
 console.log("Resta:", resta);
 console.log("Multiplicación:", multiplicacion);
@@ -68,53 +69,99 @@ incremento++;
 console.log("Incremento:", incremento);
 
 //7. Crea una variable para cada operador de asignacion y muestra su resultado en la consola.
-
-
+let asignacion = 10;
+asignacion += 5; 
+console.log("Asignación +=", asignacion);
+asignacion -= 3;
+console.log("Asignación -=", asignacion);
+asignacion *= 2;
+console.log("Asignación *=", asignacion);
+asignacion /= 4;
+console.log("Asignación /=", asignacion);
+asignacion %= 3;
+console.log("Asignación %=", asignacion);
 
 //8. Crea una variable para cada operador de comparacion y muestra su resultado en la consola.
+let igual = (5 == '5');
+let estrictamenteIgual = (5 === 5);
+let diferente = (5 != 3);  
+let estrictamenteDiferente = (5 !== '5');
+let mayorQue = (10 > 5);
+let menorQue = (3 < 7);
+let mayorOIgual = (5 >= 5);
+let menorOIgual = (4 <= 6);
+console.log("Igual (==):", igual);
+console.log("Estrictamente Igual (===):", estrictamenteIgual);
+console.log("Diferente (!=):", diferente);
+console.log("Estrictamente Diferente (!==):", estrictamenteDiferente);
+console.log("Mayor Que (>):", mayorQue);
+console.log("Menor Que (<):", menorQue);
+console.log("Mayor o Igual (>=):", mayorOIgual);
+console.log("Menor o Igual (<=):", menorOIgual);
 
 //9. Crea una variable pcon un operador lógico y muestra su resultado en la consola.(AND y OR)
 
+
 //10. Crea una variable con un operador ternario y muestra su resultado en la consola.
+
 
 //11. Concatena dos cadenas de texto y muestra el resultado en la consola.
 
+
 //12. Transforma una cadena de texto en mayúsculas y muestra el resultado en la consola.
+
 
 //13. Muestra la longitud de una cadena de texto en la consola.
 
+
 //14. Remplaza un el espacio de una cadena por un guión y muestra el resultado en la consola.
+
 
 //15. Comprueba si un String contiene una palabra en concreto y muestra el resultado en la consola.
 
+
 //17. Investiga algun metodo mas utilizado con String y muestra el resultado en la consola.
+
 
 //18. Imprime tu nombre si una varibale tiene su valor
 
+
 //19. Imprime acceso permitido si un variable nombre y su contraseña son correctos
+
 
 //20. Imprime en que estacion del año estamos a partir de una variable que indique el mes
 
+
 //21. Usa switch rehaciendo el ejercicio 20
+
 
 //22. Crea un listado que almacene cinco elementos.
 
+
 //23. A ese listado incluye uno al principio y uno al final.
 
+
 //24. Elimina el último elemento del listado.
+
 
 //24. Crea un Set que guarde cinco elementos.
 
 //26.Crea un mapa que como clave tenga un numero y como valor el mes.
 
+
 //27. Crea un bucle que imprima numero del 1 al 10
+
 
 //28. Crea un bucle que cuente las vocales de una cadena de texto
 
+
 //29. Usa un bucle para invertir una cadena de texto
+
 
 //30. Crea un funcion que reciba dos numeros y los sume
 
+
 //31. Crea una funcion que reciba un Array de Strings y devuelve un nuevo array solo con las letras mayusculas del Array original
+
 
 //32. Crea una funcion que reciba un String y devuelva la candena al reves
