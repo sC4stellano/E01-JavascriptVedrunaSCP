@@ -33,6 +33,7 @@ array = [10, 20, 30];
 simbolo = Symbol("nuevo simbolo");
 //5. Declara constantes con valores asociados a todos los tipos de datos y imprimelos en la consola.
 
+
 //6. Crea una variable para cada operador aritmetico y muestra su resultado en la consola.
 
 //7. Crea una variable para cada operador de asignacion y muestra su resultado en la consola.
