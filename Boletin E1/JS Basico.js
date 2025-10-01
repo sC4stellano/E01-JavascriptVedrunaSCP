@@ -28,15 +28,48 @@ nombre = "Nuevo texto";
 booleano = false;
 nulo = "Ahora no es nulo";
 indefinido = "Ahora tiene valor";
-objeto = { nombre: "", edad: 30 };
+objeto = { nombre: "Sergi", edad: 21  };
 array = [10, 20, 30];
-simbolo = Symbol("nuevo simbolo");
+simbolo = Symbol("nuevo simbolo"); 
 //5. Declara constantes con valores asociados a todos los tipos de datos y imprimelos en la consola.
+const Numero = 95;
+const Nombre = "Constante texto";
+const Booleano = false;
+const Nulo = null;
+const Indefinido = undefined;
+const Objeto = { nombre: "Sergi", edad: 21 }
+const Array = [5, 10, 15];
+const Simbolo = Symbol("constante simbolo");
 
-
+console.log("Número:", Numero);
+console.log("Texto:", Nombre); 
+console.log("Booleano:", Booleano);
+console.log("Nulo:", Nulo);
+console.log("Indefinido:", Indefinido);
+console.log("Objeto:", Objeto);
+console.log("Array:", Array);
+console.log("Símbolo:", Simbolo);
 //6. Crea una variable para cada operador aritmetico y muestra su resultado en la consola.
+let suma = 5 + 3;
+let resta = 10 - 4;
+let multiplicacion = 6 * 7;
+let division = 20 / 5;
+let modulo = 10 % 3;
+console.log("Suma:", suma);
+console.log("Resta:", resta);
+console.log("Multiplicación:", multiplicacion);
+console.log("División:", division);
+console.log("Módulo:", modulo);
+decremento = 10;
+decremento--;
+console.log("Decremento:", decremento);
+incremento = 10;
+incremento++;
+console.log("Incremento:", incremento);
 
 //7. Crea una variable para cada operador de asignacion y muestra su resultado en la consola.
+
+
 
 //8. Crea una variable para cada operador de comparacion y muestra su resultado en la consola.
 
