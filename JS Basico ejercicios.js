@@ -1,11 +1,36 @@
 //1. Escribe un comentario en una linea
-
+// Este es un comentario en una linea
 //2. Escribe un comentario en varias lineas
-
+/* Este es un comentario
+en varias lineas */
 //3. Declara variables con valores asociados a todos los tipos de datos y imprimelos en la consola
+let numero = 42; 
+let nombre = "Hola, mundo!";
+let booleano = true;
+let nulo = null;
+let indefinido = undefined;
+let objeto = { nombre: "Sergi", edad: 21 };
+let array = [1, 2, 3, 4, 5];
+let simbolo = Symbol("simbolo");
+
+console.log("Número:", numero);
+console.log("Texto:", nombre); 
+console.log("Booleano:", booleano);
+console.log("Nulo:", nulo);
+console.log("Indefinido:", indefinido);
+console.log("Objeto:", objeto);
+console.log("Array:", array);
+console.log("Símbolo:", simbolo);
 
 //4.Modifica los valores de las variables por otros valores y vuelve a imprimirlos en la consola.
-
+numero = 100;
+nombre = "Nuevo texto";
+booleano = false;
+nulo = "Ahora no es nulo";
+indefinido = "Ahora tiene valor";
+objeto = { nombre: "", edad: 30 };
+array = [10, 20, 30];
+simbolo = Symbol("nuevo simbolo");
 //5. Declara constantes con valores asociados a todos los tipos de datos y imprimelos en la consola.
 
 //6. Crea una variable para cada operador aritmetico y muestra su resultado en la consola.
