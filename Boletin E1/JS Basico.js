@@ -129,22 +129,46 @@ let textoMayusculas = textoMinusculas.toUpperCase();
 let cadena = "JavaScript";
 let longitud = cadena.length;
 
-console.log("nEjercicio 13 - Longitud:");
+console.log("Ejercicio 13 - Longitud:");
 console.log(" + cadena +  tiene " + longitud + " caracteres");
 //14. Remplaza un el espacio de una cadena por un guión y muestra el resultado en la consola.
 
-
+ let frase = "Hola mundo JavaScript";
+ let fraseConGuiones = frase.replace(/ /g, "-");
+ 
+ console.log("Ejercicio 14 - Reemplazar espacios:");
+ console.log(fraseConGuiones);
 //15. Comprueba si un String contiene una palabra en concreto y muestra el resultado en la consola.
 
+let textoCompleto = "Fernando is faster than you";
+let contienePalabra = textoCompleto.includes("Fernando");
 
+console.log("Ejercicio 15 - Contiene palabra:");
+console.log(`¿"${textoCompleto}" contiene "Fernando"?`, contienePalabra);
 //17. Investiga algun metodo mas utilizado con String y muestra el resultado en la consola.
+let ejemplo = "   JavaScript Basico   ";
 
+console.log("Ejercicio 17 - Métodos adicionales:");
+console.log("Original:", `"${ejemplo}"`);
+console.log("Trim:", `"${ejemplo.trim()}"`);
+console.log("Slice(3, 10):", `"${ejemplo.slice(3, 10)}"`);
+console.log("Split:", ejemplo.trim().split(" "));
 
 //18. Imprime tu nombre si una varibale tiene su valor
-
+let miNombre = "Sergio";
+if (miNombre) {
+    console.log("Ejercicio 18 - Mi nombre es:", miNombre);
+}
 
 //19. Imprime acceso permitido si un variable nombre y su contraseña son correctos
+let usuario = "admin";
+let contraseña = "1234";
 
+if (usuario === "admin" && contraseña === "1234") {
+    console.log("Ejercicio 19 - Acceso permitido");
+} else {
+    console.log("Ejercicio 19 - Acceso denegado");
+}
 
 //20. Imprime en que estacion del año estamos a partir de una variable que indique el mes
 
