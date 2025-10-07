@@ -171,38 +171,138 @@ if (usuario === "admin" && contraseña === "1234") {
 }
 
 //20. Imprime en que estacion del año estamos a partir de una variable que indique el mes
+let mes = 10; 
+let estacion;
 
+if (mes >= 3 && mes <= 5) {
+    estacion = "Primavera";
+} else if (mes >= 6 && mes <= 8) {
+    estacion = "Verano";
+} else if (mes >= 9 && mes <= 11) {
+    estacion = "Otoño";
+} else {
+    estacion = "Invierno";
+}
+
+console.log("Ejercicio 20 - Estación:");
+console.log(`Mes ${mes}: ${estacion}`);
 
 //21. Usa switch rehaciendo el ejercicio 20
 
+let mesSwitch = 10;
+let estacionSwitch;
 
+switch (mesSwitch) {
+    case 12:
+    case 1:
+    case 2:
+        estacionSwitch = "Invierno";
+        break;
+    case 3:
+    case 4:
+    case 5:
+        estacionSwitch = "Primavera";
+        break;
+    case 6:
+    case 7:
+    case 8:
+        estacionSwitch = "Verano";
+        break;
+    case 9:
+    case 10:
+    case 11:
+        estacionSwitch = "Otoño";
+        break;
+    default:
+        estacionSwitch = "Mes inválido";
+}
+
+console.log("Ejercicio 21 - Switch estaciones:");
+console.log(`Mes ${mesSwitch}: ${estacionSwitch}`);
 //22. Crea un listado que almacene cinco elementos.
-
+let listFruta = ["manzana", "platano", "naranja", "uva", "pera"];
+console.log("Ejercicio 22 - Lista:", listFruta);
 
 //23. A ese listado incluye uno al principio y uno al final.
-
+listFruta.unshift("kiwi");
+listFruta.push("mango");
+console.log("Ejercicio 23 - Con añadidos:", listFruta);
 
 //24. Elimina el último elemento del listado.
-
+listFruta.pop();
+console.log("Ejercicio 24 - Sin último elemento:", listFruta);
 
 //24. Crea un Set que guarde cinco elementos.
 
+let miSet = new Set([1, 2, 3, 4, 5]);
+console.log("Ejercicio 25 - Set:", miSet);
 //26.Crea un mapa que como clave tenga un numero y como valor el mes.
-
-
+let mesesMap = new Map();
+mesesMap.set(1, "Enero");
+mesesMap.set(2, "Febrero");
+mesesMap.set(3, "Marzo");
+mesesMap.set(4, "Abril");
+console.log("Ejercicio 26 - Map meses:");
+console.log("Mes 3:", mesesMap.get(3));
+console.log("Todos los meses:", mesesMap);
 //27. Crea un bucle que imprima numero del 1 al 10
-
+console.log("Ejercicio 27 - Números del 1 al 10:");
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
 
 //28. Crea un bucle que cuente las vocales de una cadena de texto
 
+let textoVocales = "JavaScript es un lenguaje de programación";
+let contador = 0;
+let vocales = "aeiouáéíóú";
 
+for (let letra of textoVocales.toLowerCase()) {
+    if (vocales.includes(letra)) {
+        contador++;
+    }
+}
+
+console.log("Ejercicio 28 - Contar vocales:");
+console.log(`"${textoVocales}" tiene ${contador} vocales`);
 //29. Usa un bucle para invertir una cadena de texto
 
+let cadenaOriginal = "Hola Mundo";
+let cadenaInvertida = "";
 
+for (let i = cadenaOriginal.length - 1; i >= 0; i--) {
+    cadenaInvertida += cadenaOriginal[i];
+}
+
+console.log("Ejercicio 29 - Invertir cadena:");
+console.log("Original:", cadenaOriginal);
+console.log("Invertida:", cadenaInvertida);
 //30. Crea un funcion que reciba dos numeros y los sume
+function sumar(a, b) {
+    return a + b;
+}
 
+console.log("Ejercicio 30 - Sumar:");
+console.log("5 + 3 =", sumar(5, 3));
 
 //31. Crea una funcion que reciba un Array de Strings y devuelve un nuevo array solo con las letras mayusculas del Array original
+function filtrarMayusculas(arrayStrings) {
+    return arrayStrings.filter(palabra => {
+        return palabra === palabra.toUpperCase() && palabra !== palabra.toLowerCase();
+    });
+}
 
+let palabras = ["HOLA", "mundo", "JAVASCRIPT", "programación", "PYTHON"];
+console.log("Ejercicio 31 - Filtrar mayúsculas:");
+console.log("Original:", palabras);
+console.log("Mayúsculas:", filtrarMayusculas(palabras));
 
 //32. Crea una funcion que reciba un String y devuelva la candena al reves
+function invertirCadena(cadena) {
+    return cadena.split('').reverse().join('');
+}
+
+let textoParaInvertir = "xiaomi";
+console.log("Ejercicio 32 - Invertir cadena:");
+console.log("Original:", textoParaInvertir);
+console.log("Invertida:", invertirCadena(textoParaInvertir));
