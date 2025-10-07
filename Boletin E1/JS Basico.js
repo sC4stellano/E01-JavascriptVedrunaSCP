@@ -82,38 +82,55 @@ asignacion %= 3;
 console.log("Asignación %=", asignacion);
 
 //8. Crea una variable para cada operador de comparacion y muestra su resultado en la consola.
-let igual = (5 == '5');
-let estrictamenteIgual = (5 === 5);
-let diferente = (5 != 3);  
-let estrictamenteDiferente = (5 !== '5');
-let mayorQue = (10 > 5);
-let menorQue = (3 < 7);
-let mayorOIgual = (5 >= 5);
-let menorOIgual = (4 <= 6);
-console.log("Igual (==):", igual);
-console.log("Estrictamente Igual (===):", estrictamenteIgual);
-console.log("Diferente (!=):", diferente);
-console.log("Estrictamente Diferente (!==):", estrictamenteDiferente);
-console.log("Mayor Que (>):", mayorQue);
-console.log("Menor Que (<):", menorQue);
-console.log("Mayor o Igual (>=):", mayorOIgual);
-console.log("Menor o Igual (<=):", menorOIgual);
+let igual = 5 == "5";
+let estrictamenteIgual = 5 === "5";
+let diferente = 5 != "5";
+let estrictamenteDiferente = 5 !== "5";
+let mayorQue = 10 > 5;
+let menorQue = 10 < 5;
+
+console.log("Ejercicio 8 - Operadores de comparación:");
+console.log('5 == "5":', igual);
+console.log('5 === "5":', estrictamenteIgual);
+console.log('5 != "5":', diferente);
+console.log('5 !== "5":', estrictamenteDiferente);
+console.log("10 > 5:", mayorQue);
+console.log("10 < 5:", menorQue);
 
 //9. Crea una variable pcon un operador lógico y muestra su resultado en la consola.(AND y OR)
+let and = (5 > 3) && (10 < 15);
+let or = (5 > 10) || (10 < 15);
 
+console.log("\nEjercicio 9 - Operadores lógicos:");
+console.log("(5 > 3) && (10 < 15):", and);
+console.log("(5 > 10) || (10 < 15):", or);
 
 //10. Crea una variable con un operador ternario y muestra su resultado en la consola.
+let edad = 18;
+let puedeVotar = edad >= 18 ? "Puede votar" : "No puede votar";
 
+console.log("Ejercicio 10 - Operador ternario:");
+console.log("Edad:", edad, "-", puedeVotar);
 
 //11. Concatena dos cadenas de texto y muestra el resultado en la consola.
+let saludo = "Hola";
+let nom = "María";
+let mensaje = saludo + " " + nom;
 
+console.log("Ejercicio 11 - Concatenación:");
+console.log(mensaje);
 
 //12. Transforma una cadena de texto en mayúsculas y muestra el resultado en la consola.
-
+let textoMinusculas = "esto es un texto en minusculas";
+let textoMayusculas = textoMinusculas.toUpperCase();
 
 //13. Muestra la longitud de una cadena de texto en la consola.
 
+let cadena = "JavaScript";
+let longitud = cadena.length;
 
+console.log("nEjercicio 13 - Longitud:");
+console.log(" + cadena +  tiene " + longitud + " caracteres");
 //14. Remplaza un el espacio de una cadena por un guión y muestra el resultado en la consola.
 
 
