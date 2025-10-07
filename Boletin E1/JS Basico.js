@@ -101,7 +101,7 @@ console.log("10 < 5:", menorQue);
 let and = (5 > 3) && (10 < 15);
 let or = (5 > 10) || (10 < 15);
 
-console.log("\nEjercicio 9 - Operadores lógicos:");
+console.log("Ejercicio 9 - Operadores lógicos:");
 console.log("(5 > 3) && (10 < 15):", and);
 console.log("(5 > 10) || (10 < 15):", or);
 
